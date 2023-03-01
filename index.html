@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+   <header class="header">
+    <h1 id="tittle">College Student Survey</h1>
+    <P id="quest-1">The purpose of this survey is to find out about your current experiences in college and at work. and to learn about your plans for the future.</P>
+   </header>
+  </div>
+<form action="" id="survey-form" >
+    <div class="form-group">
+      <label for="name" class="lab">Name</label>
+      <input type="text" name="name" id="name" class="form-control" placeholder="Enter ur name" required>
+    </div>
+   
+   <div class="form-group">
+    <label for="email"  class="lab">Email</label>
+    <input type="text" name="email" id="email" class="form-control" placeholder="Enter ur email" required>
+  </div>
+  <div class="form-group">
+    <label for="phone number" class="lab">Phone number</label>
+    <input type="text" name="phone number" id="phone number" class="form-control" placeholder="Enter ur phone number" required>
+  </div>
+
+
+  <div class="form-group">
+    <label for="address" class="lab">Address</label>
+    <input type="text" name="address" id="address" class="form-control" placeholder="Enter ur address" required>
+  </div>
+
+
+<hr>
+  <div class="form-group">
+    <p id="quest">1. Which option best describe your current role?</p>
+   <select name="role" id="drop-down" class="form-control" required>
+    <option value="" disabled selected>select current role</option>
+    <option value="student">Student</option>
+
+    <option value="teacher">Teacher</option>
+
+    <option value="an employee">Employee</option>
+
+    <option value="others">Others</option>
+ 
+   </select>
+  </div>
+  <!--radio button-->
+ <div class="form-gruop">
+  <p id="quest">2. At what age did you enter college?</p>
+
+  <label for="">
+    <input type="radio" name="source" value="12-16" class="inputRadio">
+  12-16</label>
+
+  <label for="">
+    <input type="radio" name="source" value="17-20" class="inputRadio">
+  17-20</label>
+
+  <label for="">
+    <input type="radio" name="source" value="21-25" class="inputRadio">
+  21-25</label>
+
+  <label for="">
+    <input type="radio" name="source" value="others.." class="inputRadio">
+  Others..</label>
+ </div>
+<!-- end of radio button-->
+
+<!--checkbox selection-->
+ 
+  <div class="form-group">
+  <p id="quest">3. What was your first day experience at your  college as a first year student?</p>
+  <label for="">
+    <input type="checkbox" name="prefer" class="checkbox" value="excited"> Excited
+</label>
+<label for="">
+  <input type="checkbox" name="prefer" class="checkbox" value="uncertainty"> Uncertainty
+</label>
+<label for="">
+  <input type="checkbox" name="prefer" class="checkbox" value="a sense of belonging"> A sense of belonging
+</label>
+<label for="">
+  <input type="checkbox" name="prefer" class="checkbox" value="Pride"> Pride
+</label>
+<label for="">
+  <input type="checkbox" name="prefer" class="checkbox" value="other.."> Other..
+</label>
+  </div>
+<!-- end checkbox-->
+
+<div class="form-group">
+  <p id="quest">4. When you graduate from this college,what do you plan to do?</p>
+  <label for="">
+    <input type="checkbox" name="prefer" class="checkbox" value="undecided"> Undecided
+</label>
+<label for="">
+  <input type="checkbox" name="prefer" class="checkbox" value="enter military service"> Enter military service
+</label>
+<label for="">
+  <input type="checkbox" name="prefer" class="checkbox" value="participate in a formal apprenticeship program"> Participate in a formal apprenticeship program
+</label>
+<label for="">
+  <input type="checkbox" name="prefer" class="checkbox" value="work full time"> Work full time
+</label>
+<label for="">
+  <input type="checkbox" name="prefer" class="checkbox" value="other.."> Other..
+</label>
+  </div>
+  <!-- end checkbox-->
+  <div class="form-group">
+    <p id="quest">5. Besides yourself,who has helped you most to make plans for the future?</p>
+    <label for="">
+      <input type="checkbox" name="prefer" class="checkbox" value="teacher"> Teacher
+  </label>
+  <label for="">
+    <input type="checkbox" name="prefer" class="checkbox" value="counselor"> Counselor
+  </label>
+  <label for="">
+    <input type="checkbox" name="prefer" class="checkbox" value="family members or guardian">Family members or guardian
+  </label>
+  <label for="">
+    <input type="checkbox" name="prefer" class="checkbox" value="friends"> Friends
+  </label>
+  <label for="">
+    <input type="checkbox" name="prefer" class="checkbox" value="other.."> Other..
+  </label>
+    </div>
+    <!--end checkbox-->
+    <div class="form-group">
+      <p id="quest">6. In your  opinion,how prepared are you to undertake the plans you have made for yourself after graduating from college?</p>
+      <label for="">
+        <input type="checkbox" name="prefer" class="checkbox" value="not at all prepared"> Not at all prepared
+    </label>
+    <label for="">
+      <input type="checkbox" name="prefer" class="checkbox" value="somewhat prepared"> Somewhat prepared
+    </label>
+    <label for="">
+      <input type="checkbox" name="prefer" class="checkbox" value="fairly well prepared">Fairly well prepared
+    </label>
+    <label for="">
+      <input type="checkbox" name="prefer" class="checkbox" value="no idea"> No idea
+    </label>
+    <label for="">
+      <input type="checkbox" name="prefer" class="checkbox" value="other.."> Other..
+    </label>
+      </div>
+      <!--end checkbox-->
+    
+<hr>
+<div class="form-group">
+  <p id="quest">Give us your feedback...</p>
+  <textarea name="feedback" id="textarea" cols="30" rows="5"  placeholder="Give feedback "></textarea>
+</div>
+
+<button type="submit" class="submit">Submit</button>
+</form>
+</body>
+</html>
